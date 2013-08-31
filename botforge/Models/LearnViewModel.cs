@@ -21,6 +21,7 @@ namespace botforge.Models
         public string Title{get;set;}
 
         [Required]
+        [Display(Name = "Cover Image")]
         public string LessonImage { get; set; }
 
         [Required]
