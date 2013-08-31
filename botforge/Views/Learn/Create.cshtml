@@ -1,0 +1,62 @@
+@model botforge.Models.LessonViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset class="form-horizontal">
+        <legend>LessonViewModel</legend>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.WeekNumber, new { @class = "control-label" })
+			<div class="controls">
+				@Html.EditorFor(model => model.WeekNumber)
+				@Html.ValidationMessageFor(model => model.WeekNumber, null, new { @class = "help-inline" })
+			</div>
+		</div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Title, new { @class = "control-label" })
+			<div class="controls">
+				@Html.EditorFor(model => model.Title)
+				@Html.ValidationMessageFor(model => model.Title, null, new { @class = "help-inline" })
+			</div>
+		</div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.LessonImage, new { @class = "control-label" })
+			<div class="controls">
+				@Html.EditorFor(model => model.LessonImage)
+				@Html.ValidationMessageFor(model => model.LessonImage, null, new { @class = "help-inline" })
+			</div>
+		</div>
+
+        <div class="control-group">
+            @Html.LabelFor(model => model.Summary, new { @class = "control-label" })
+			<div class="controls">
+				@Html.EditorFor(model => model.Summary)
+				@Html.ValidationMessageFor(model => model.Summary, null, new { @class = "help-inline" })
+			</div>
+		</div>
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Create" class="btn" />
+        </div>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

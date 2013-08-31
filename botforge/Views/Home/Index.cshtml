@@ -13,8 +13,8 @@
             <img src="~/img/robot.png" style="width:32px;margin-right:15px;"/>
             <img src="~/img/Learn.png" /></h2>
         <p>Robotics is a pathway to learning hardware and software engineering.  Follow us for weekly classes and activities.</p>
-        <p><a class="btn" href="~/Views/Home/Learn.cshtml">Learn more &raquo;</a></p>
-    </div>
+        <p>@Html.ActionLink(HttpUtility.HtmlDecode("Learn more &raquo;"), "Index", "Learn", null, new { @class = "btn" })</p>
+        </div>
     <div class="span4">
         <h2><img src="~/img/robot.png" style="width:32px;margin-right:15px;" />
             <img src="~/img/Build.png" /></h2>

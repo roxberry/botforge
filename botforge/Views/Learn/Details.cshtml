@@ -1,0 +1,49 @@
+@model botforge.Models.LessonViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+	<legend>LessonViewModel</legend>
+	<dl>
+		<dt>
+			@Html.DisplayNameFor(model => model.WeekNumber)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.WeekNumber)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Title)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Title)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.LessonImage)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.LessonImage)
+		</dd>
+
+		<dt>
+			@Html.DisplayNameFor(model => model.Summary)
+		</dt>
+
+		<dd>
+			@Html.DisplayFor(model => model.Summary)
+		</dd>
+
+	</dl>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
