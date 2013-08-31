@@ -51,3 +51,11 @@ input[type="checkbox"].input-validation-error {
 {
     visibility:hidden;
 }
+
+a.site-logo  {     
+ background: url(../img/logo3.png) no-repeat top left !important;
+ display: block;       
+ width: 300px;       
+ height: 47px;       
+ text-indent: -9999px;  /*hides the link text*/ 
+  } 
