@@ -253,6 +253,7 @@
     <Content Include="img\Learn.png" />
     <Content Include="img\logo.jpg" />
     <Content Include="img\logo3.png" />
+    <Content Include="img\logo_tile.png" />
     <Content Include="img\main.ico" />
     <Content Include="img\robot.png" />
     <Content Include="Scripts\bootstrap.js" />
