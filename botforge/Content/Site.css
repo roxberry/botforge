@@ -53,9 +53,9 @@ input[type="checkbox"].input-validation-error {
 }
 
 a.site-logo  {     
- background: url(../img/logo3.png) no-repeat top left !important;
+ background: url(../img/logo_tile.png) no-repeat top left !important;
  display: block;       
- width: 300px;       
+ width: 350px;       
  height: 47px;       
  text-indent: -9999px;  /*hides the link text*/ 
   } 
