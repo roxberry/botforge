@@ -58,16 +58,17 @@ a.site-logo  {
  width: 250px;       
  height: 33px;       
  text-indent: -9999px;  /*hides the link text*/ 
-  } 
+  }
 
-@media all and (max-width:767px)
-[class*='span'], [class*='span'].uneditable-input, .row-fluid [class*='span'] {
-    display: block;
-    float: none;
-    width: 100%;
-    margin-left: 0px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 25px;
+@media all and (max-width:767px) {
+    [class*='span'], [class*='span'].uneditable-input, .row-fluid [class*='span'] {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-left: 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
 }
