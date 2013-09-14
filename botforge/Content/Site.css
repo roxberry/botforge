@@ -53,7 +53,7 @@ input[type="checkbox"].input-validation-error {
 }
 
 a.site-logo  {     
- background: url(../img/logo_tile.png) no-repeat top left !important;
+ background: url(../img/logo.png) no-repeat top left !important;
  display: block;       
  width: 250px;       
  height: 33px;       
